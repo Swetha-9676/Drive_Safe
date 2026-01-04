@@ -26,7 +26,9 @@ transform = transforms.Compose([
     transforms.ToTensor()
 ])
 
-full_dataset = datasets.ImageFolder("data/eyes", transform=transform)
+
+full_dataset = datasets.ImageFolder("dataset/eyes", transform=transform)
+
 
 # Split: 70% train, 15% val, 15% test
 total = len(full_dataset)
